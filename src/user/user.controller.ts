@@ -1,6 +1,5 @@
 import {
   Controller,
-  Get,
   Post,
   Body,
   UsePipes,
@@ -18,9 +17,4 @@ export class UserController {
   create(@Body() createUserDto: CreateUserDto) {
     return this.userService.create(createUserDto);
   }
-
-  // @Get()
-  // findOne() {
-  //   return this.userService.findOne();
-  // }
 }
